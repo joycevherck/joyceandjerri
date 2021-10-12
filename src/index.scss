@@ -1,0 +1,27 @@
+@import './global.scss';
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sansserif);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-blackish);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-burntorange);
+}
