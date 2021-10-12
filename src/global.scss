@@ -8,3 +8,45 @@
   --font-serif: 'Playfair Display', 'Times New Roman', Times, serif;
   --font-sansserif: 'Roboto', 'Arial', sans-serif;
 }
+
+.greyBackground {
+  background-color: var(--color-grey);
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+
+.greenText {
+  color: var(--color-sagegreen);
+}
+
+.fullWidthWrapper {
+  margin: 4rem auto;
+}
+
+.maxWidth {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  gap: 3rem;
+}
+
+.fontWeightNormal {
+  font-weight: 400;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.fullHeightWrapper {
+  height: 100vh;
+  display: flex;
+}
