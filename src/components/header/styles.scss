@@ -1,13 +1,27 @@
 .headerWrapper {
-  height: 100vh;
+  background-image: url('../../images/collage.jpg');
+  background-size: cover;
+  height: 80vh;
   display: flex;
+
+  @media screen and (min-width: 900px){
+    height: 90vh;
+  }
 }
 
 .headerText {
-  padding: 4rem;
+  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 46%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+  width: 100%;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 900px){
+    padding: 4rem;
+  }
   
   span {
     font-family: var(--font-serif);
@@ -16,6 +30,15 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+
+    @media screen and (min-width: 900px){
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 600px;
   }
 }

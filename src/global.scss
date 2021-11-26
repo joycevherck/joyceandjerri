@@ -15,12 +15,27 @@
   padding: 4rem 0;
 }
 
+.orangeBackground {
+  background-color: var(--color-burntorange);
+  margin: 4rem 0 0;
+  padding: 4rem 0;
+  
+  h2 {
+    color: var(--color-white);
+
+  }
+}
+
 .greenText {
   color: var(--color-sagegreen);
 }
 
+.orangeText {
+  color: var(--color-burntorange);
+}
+
 .fullWidthWrapper {
-  margin: 4rem auto;
+  margin: 0 auto;
 }
 
 .maxWidth {
@@ -35,7 +50,17 @@
 
 .flex {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
+  flex-direction: column;
+
+  @media screen and (min-width: 900px){
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+.fontFamilySerif {
+  font-family: var(--font-serif);
 }
 
 .fontWeightNormal {
@@ -49,4 +74,51 @@
 .fullHeightWrapper {
   height: 100vh;
   display: flex;
+}
+
+.button {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  border: 2px solid var(--color-sagegreen);
+  color: var(--color-sagegreen);
+  text-decoration: none;
+  padding: .1rem 1.4rem .6rem;
+  transition: all 250ms ease-in-out;
+
+  @media screen and (min-width: 900px){
+    font-size: 2rem;
+  }
+
+  &:after {
+    content: "\02197";
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 3px;
+    opacity: 0;
+    width: 0;
+    display: inline-block;
+    transition: all 250ms ease-in-out;
+  }
+  
+  &:hover,
+  &:focus {
+    &:after {
+      opacity: 1;
+      width: 17px;
+    }
+  }
+
+  .orangeBackground & {
+    border-color: var(--color-white);
+    color: var(--color-white);
+  }
+}
+
+.maxWidth {
+  max-width: 650px;
+  padding: 0 1rem;
+
+  @media screen and (min-width: 900px){
+    padding: 0;
+  }
 }
