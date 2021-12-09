@@ -22,6 +22,8 @@ const Intro = () => {
           <a href="https://g.page/thegreenweddingsincornwall?share" target="_blank" rel="noreferrer">
             View on map
           </a>
+          {' '}|{' '}
+          <a href="https://www.thegreencornwall.co.uk/about-us/location/" target="_blank" rel="noreferrer">How to get there</a>
         </div>
       </div>
   
@@ -44,19 +46,54 @@ const Intro = () => {
               <p>|</p>
               <h3 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h3>
               <p>7am breakfast</p>
-              <p><strong>11am ceremony</strong></p>
+              <p><strong>2pm ceremony</strong></p>
               <p>6pm dinner</p>
               <p><strong>7.15pm reception</strong></p>
+              <p>11.30pm music stops</p>
+
+              <p>|</p>
+              <h3 className="fontWeightNormal mb1 greenText">Wed 5 October 2022</h3>
+              <p>Breakfast</p>
+              <p>Check out by 11am</p>
             </>
           }
 
           {type === 'reception' &&
             <>
               <p><strong>7.15pm reception</strong></p>
+              <p>11.30pm music stops</p>
+              <p>|</p>
+              <div className="maxWidth">
+                <p>
+                  If you're not driving, we suggest that you book your taxi in advance for around 11:45pm/midnight at the latest.
+                </p>
+                <div className="flex smallGap">
+                  <p>
+                    Anothony’s Taxis<br />
+                    <a href="tel:07788900222">07788 900 222</a>
+                  </p>
+                  <p>
+                    Quick Cabs<br />
+                    <a href="tel:01579348525">01579 348 525</a>
+                  </p>
+                  <p>
+                    Caradon Cabs<br />
+                    <a href="tel:07841993776">07841 993 776</a>
+                  </p>
+                  <p>
+                    St Cleer Taxis<br />
+                    <a href="tel:01579381212">01579 381 212</a>
+                  </p>
+                </div>
+              </div>
             </>
           }
-          
         </div>
+      </div>
+
+      <div className="maxWidth">
+        <h2>Dress code</h2>
+        <p>We’re happy for you to wear whatever you would normally wear to a wedding, but just note that we are hopefully (weather permitting) getting married outside, so suitable shoes and possibly an extra layer may be needed!</p>
       </div>
     </div>
   )

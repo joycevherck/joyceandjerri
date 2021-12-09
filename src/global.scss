@@ -41,6 +41,7 @@
 .maxWidth {
   max-width: 750px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .center {
@@ -56,6 +57,15 @@
   @media screen and (min-width: 900px){
     flex-direction: row;
     gap: 5rem;
+  }
+}
+
+.smallGap {
+  gap: 0;
+  justify-content: space-around;
+
+  @media screen and (min-width: 900px){
+    gap: 1rem;
   }
 }
 
