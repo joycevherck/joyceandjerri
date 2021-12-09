@@ -1,14 +1,14 @@
 import Footer from './components/footer';
 import Header from './components/header'
 import Intro from './components/intro';
-import Registery from './components/registery';
+import Registry from './components/registry';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Intro />
-      <Registery />
+      <Registry />
       <Footer />
     </div>
   );

@@ -1,11 +1,11 @@
 .headerWrapper {
   background-image: url('../../images/collage.jpg');
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
   display: flex;
 
   @media screen and (min-width: 900px){
-    height: 90vh;
+    height: 80vh;
   }
 }
 

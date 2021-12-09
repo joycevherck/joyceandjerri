@@ -9,6 +9,10 @@
   --font-sansserif: 'Roboto', 'Arial', sans-serif;
 }
 
+.spacer {
+  padding: .5rem 0;
+}
+
 .greyBackground {
   background-color: var(--color-grey);
   margin: 4rem 0;
@@ -17,7 +21,6 @@
 
 .orangeBackground {
   background-color: var(--color-burntorange);
-  margin: 4rem 0 0;
   padding: 4rem 0;
   
   h2 {
@@ -36,12 +39,6 @@
 
 .fullWidthWrapper {
   margin: 0 auto;
-}
-
-.maxWidth {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .center {
@@ -124,9 +121,28 @@
   }
 }
 
+.button--secondary {
+  background-color: transparent;
+  color: var(--color-blackish);
+  font-size: 1rem;
+  border: 2px solid var(--color-blackish);
+  margin: 1rem .5rem 0;
+  padding: .5rem .8rem .6rem;
+  cursor: pointer;
+
+  &:after {
+    content: "\02193";
+  }
+}
+
 .maxWidth {
+  margin: 0 auto;
   max-width: 650px;
   padding: 0 1rem;
+
+  &.marginBottom {
+    margin-bottom: 4rem;
+  }
 
   @media screen and (min-width: 900px){
     padding: 0;

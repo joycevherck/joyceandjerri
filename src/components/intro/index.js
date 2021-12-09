@@ -1,16 +1,23 @@
 import React, { useState } from 'react'
+import WeddingColours from '../colours'
 
 const Intro = () => {
   const [type, setType] = useState(null)
 
   return (
     <div className="fullWidthWrapper center">
+      <div className="maxWidth">
+        <p>Regrettably we have extremely limited seating at our ceremony and we haven't been able to invite as many people as we'd like. <strong>Please check your invite</strong> to see if you're invited to the ceremony or the reception as we won't be able to accommodate any suprise guests. If you are a reception guest, please feel free to bring a +1.</p>
+        <div className="spacer" />
+        <div className="spacer" />
+    
+      </div>
       <div className="flex center">
         <div>
           <p>When</p>
           <h2 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h2>
           <h3 className="fontWeightNormal greenText">
-            Ceremony: 1.30pm—6pm<br />
+            Ceremony: 1.30pm<br />
             Reception: 7.15pm—11.30pm
           </h3>
         </div>
@@ -31,25 +38,23 @@ const Intro = () => {
         <div>
           <h2>Schedule</h2>
   
-          <button onClick={() => setType('ceremony')}>I'm a ceremony guest</button>
-          <button onClick={() => setType('reception')}>I'm a reception guest</button>
-  
-          <p><small>(please check your invite to see which guest type you are)</small></p>
+          <button className="button button--secondary" onClick={() => setType('ceremony')}>I'm a ceremony guest</button>
+          <button className="button button--secondary" onClick={() => setType('reception')}>I'm a reception guest</button>
   
           {type === 'ceremony' &&
             <>
               <p>|</p>
               <h3 className="fontWeightNormal mb1 greenText">Mon 3 October 2022</h3>
               <p>3pm check-in for accomodation</p>
-              <p>5pm-8pm dinner</p>
+              <p>Dinner</p>
       
               <p>|</p>
               <h3 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h3>
-              <p>7am breakfast</p>
-              <p><strong>2pm ceremony</strong></p>
-              <p>6pm dinner</p>
+              <p>Breakfast</p>
+              <p><strong>1.30pm ceremony</strong></p>
+              <p>Dinner</p>
               <p><strong>7.15pm reception</strong></p>
-              <p>11.30pm music stops</p>
+              <p>11.30pm music ends</p>
 
               <p>|</p>
               <h3 className="fontWeightNormal mb1 greenText">Wed 5 October 2022</h3>
@@ -60,8 +65,10 @@ const Intro = () => {
 
           {type === 'reception' &&
             <>
+              <p>|</p>
+              <h3 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h3>
               <p><strong>7.15pm reception</strong></p>
-              <p>11.30pm music stops</p>
+              <p>11.30pm music ends</p>
               <p>|</p>
               <div className="maxWidth">
                 <p>
@@ -91,9 +98,10 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="maxWidth">
+      <div className="maxWidth marginBottom">
         <h2>Dress code</h2>
         <p>We’re happy for you to wear whatever you would normally wear to a wedding, but just note that we are hopefully (weather permitting) getting married outside, so suitable shoes and possibly an extra layer may be needed!</p>
+        <WeddingColours />
       </div>
     </div>
   )
