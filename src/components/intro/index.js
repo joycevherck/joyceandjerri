@@ -73,6 +73,31 @@ const Intro = () => {
               <p>4pm Dinner</p>
               <p><strong>7.15pm reception</strong></p>
               <p>11.30pm music ends</p>
+
+              <p>|</p>
+              <div className="maxWidth">
+                <p>
+                  If you're not driving, we suggest that you book your taxi in advance for around 11:45pm/midnight at the latest.
+                </p>
+                <div className="flex smallGap">
+                  <p>
+                    Anothony’s Taxis<br />
+                    <a href="tel:07788900222">07788 900 222</a>
+                  </p>
+                  <p>
+                    Quick Cabs<br />
+                    <a href="tel:01579348525">01579 348 525</a>
+                  </p>
+                  <p>
+                    Caradon Cabs<br />
+                    <a href="tel:07841993776">07841 993 776</a>
+                  </p>
+                  <p>
+                    St Cleer Taxis<br />
+                    <a href="tel:01579381212">01579 381 212</a>
+                  </p>
+                </div>
+              </div>
             </>
           }
 
