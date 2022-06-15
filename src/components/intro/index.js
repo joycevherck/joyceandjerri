@@ -38,7 +38,8 @@ const Intro = () => {
         <div>
           <h2>Schedule</h2>
   
-          <button className="button button--secondary" onClick={() => setType('ceremony')}>I'm a ceremony guest</button>
+          <button className="button button--secondary" onClick={() => setType('ceremony')}>I'm an accomodation guest</button>
+          <button className="button button--secondary" onClick={() => setType('day')}>I'm a day guest</button>
           <button className="button button--secondary" onClick={() => setType('reception')}>I'm a reception guest</button>
   
           {type === 'ceremony' &&
@@ -52,7 +53,7 @@ const Intro = () => {
               <h3 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h3>
               <p>Breakfast</p>
               <p><strong>1.30pm ceremony</strong></p>
-              <p>Dinner</p>
+              <p>4pm Dinner</p>
               <p><strong>7.15pm reception</strong></p>
               <p>11.30pm music ends</p>
 
@@ -60,6 +61,18 @@ const Intro = () => {
               <h3 className="fontWeightNormal mb1 greenText">Wed 5 October 2022</h3>
               <p>Breakfast</p>
               <p>Check out by 11am</p>
+            </>
+          }
+
+          {type === 'day' &&
+            <>
+              <p>|</p>
+              <h3 className="fontWeightNormal mb1 greenText">Tue 4 October 2022</h3>
+              <p>Breakfast</p>
+              <p><strong>1.30pm ceremony</strong></p>
+              <p>4pm Dinner</p>
+              <p><strong>7.15pm reception</strong></p>
+              <p>11.30pm music ends</p>
             </>
           }
 
