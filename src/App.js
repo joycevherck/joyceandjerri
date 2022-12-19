@@ -1,15 +1,9 @@
-import Footer from './components/footer';
-import Header from './components/header'
-import Intro from './components/intro';
-import Registry from './components/registry';
+import Outro from './components/outro';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Intro />
-      <Registry />
-      <Footer />
+      <Outro />
     </div>
   );
 }

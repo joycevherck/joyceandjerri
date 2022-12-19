@@ -1,0 +1,41 @@
+.headerWrapper {
+  background-image: url('../../images/thank-you.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+}
+
+.headerText {
+  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.7) 46%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+  width: 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 900px){
+    padding: 4rem;
+  }
+  
+  span {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+
+    @media screen and (min-width: 900px){
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 600px;
+  }
+}
